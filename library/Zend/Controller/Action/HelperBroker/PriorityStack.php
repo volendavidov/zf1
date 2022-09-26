@@ -172,7 +172,7 @@ class Zend_Controller_Action_HelperBroker_PriorityStack implements IteratorAggre
      * @param int|string $priorityOrHelperName Priority integer or the helper name
      * @return Zend_Controller_Action_HelperBroker_PriorityStack
      */
-    public function offsetUnset($priorityOrHelperName)
+    public function offsetUnset(mixed $priorityOrHelperName): void
     {
         if (!$this->offsetExists($priorityOrHelperName)) {
             require_once 'Zend/Controller/Action/Exception.php';
