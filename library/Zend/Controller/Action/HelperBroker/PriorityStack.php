@@ -163,7 +163,6 @@ class Zend_Controller_Action_HelperBroker_PriorityStack implements IteratorAggre
         }
 
         krsort($this->_helpersByPriority);  // always make sure priority and LIFO are both enforced
-        return $this;
     }
 
     /**
