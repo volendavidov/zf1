@@ -99,7 +99,7 @@ class Zend_Controller_Action_HelperBroker_PriorityStack implements IteratorAggre
      * @param int|string $priorityOrHelperName
      * @return Zend_Controller_Action_HelperBroker_PriorityStack
      */
-    public function offsetExists($priorityOrHelperName)
+    public function offsetExists(mixed $priorityOrHelperName): bool
     {
         if (is_string($priorityOrHelperName)) {
             return array_key_exists($priorityOrHelperName, $this->_helpersByNameRef);
