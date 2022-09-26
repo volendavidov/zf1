@@ -189,7 +189,6 @@ class Zend_Controller_Action_HelperBroker_PriorityStack implements IteratorAggre
 
         unset($this->_helpersByNameRef[$helperName]);
         unset($this->_helpersByPriority[$priority]);
-        return $this;
     }
 
     /**
