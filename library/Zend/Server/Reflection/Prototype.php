@@ -44,6 +44,8 @@ class Zend_Server_Reflection_Prototype
 {
     private Zend_Server_Reflection_ReturnValue|null $_return = null;
 
+    private mixed $_params = null;
+
     /**
      * Constructor
      *
