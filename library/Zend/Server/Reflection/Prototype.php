@@ -42,6 +42,8 @@ require_once 'Zend/Server/Reflection/Parameter.php';
  */
 class Zend_Server_Reflection_Prototype
 {
+    private Zend_Server_Reflection_ReturnValue|null $_return = null;
+
     /**
      * Constructor
      *
